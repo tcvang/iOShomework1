@@ -13,6 +13,11 @@
 -(void) doLayout
 {
     self.backgroundColor = [UIColor colorWithRed:1. green:.7 blue:0. alpha:1.];
+   
+   UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
+   label.text = @"Full credit";
+   label.backgroundColor = [UIColor clearColor];
+   [self addSubview:label];
 }
 
 +(id) viewWithFrame:(CGRect)frame
